@@ -3,6 +3,8 @@ module Helpers where
 import Data.Char
 import Data.List
 
+import qualified Data.Text as T
+
 getIntegerListFromStringList :: [String] -> [Int]
 getIntegerListFromStringList = map read
 
@@ -44,3 +46,6 @@ getFrequencyMapOfElements xs = map (\x -> (head x, length x)) $ group $ sort xs
 
 count :: (a -> Bool) -> [a] -> Int
 count predicate = length . filter predicate
+
+splitBy :: String -> String  -> [String ]
+splitBy delimeter string =  map T.unpack $ T.splitOn (T.pack delimeter) (T.pack string)
