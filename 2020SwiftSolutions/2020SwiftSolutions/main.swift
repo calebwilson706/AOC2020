@@ -9,3 +9,4 @@ import Foundation
 
 print("Hello, World!")
 
+Day10().part2()
