@@ -10,6 +10,7 @@
 		AB48FAB52663D01400E95616 /* Day10.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB48FAB42663D01400E95616 /* Day10.swift */; };
 		AB48FAB82663D0DC00E95616 /* PuzzleBox in Frameworks */ = {isa = PBXBuildFile; productRef = AB48FAB72663D0DC00E95616 /* PuzzleBox */; };
 		AB5FEDA226610DF000BC73CC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5FEDA126610DF000BC73CC /* main.swift */; };
+		AB65402C266531E60086E9C1 /* Day13.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB65402B266531E60086E9C1 /* Day13.swift */; };
 		ABA386682664099D0069320B /* Day11.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA386672664099D0069320B /* Day11.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		AB48FAB42663D01400E95616 /* Day10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day10.swift; sourceTree = "<group>"; };
 		AB5FED9E26610DF000BC73CC /* 2020SwiftSolutions */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 2020SwiftSolutions; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB5FEDA126610DF000BC73CC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		AB65402B266531E60086E9C1 /* Day13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day13.swift; sourceTree = "<group>"; };
 		ABA386672664099D0069320B /* Day11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day11.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +68,7 @@
 				AB5FEDA126610DF000BC73CC /* main.swift */,
 				AB48FAB42663D01400E95616 /* Day10.swift */,
 				ABA386672664099D0069320B /* Day11.swift */,
+				AB65402B266531E60086E9C1 /* Day13.swift */,
 			);
 			path = 2020SwiftSolutions;
 			sourceTree = "<group>";
@@ -133,6 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB65402C266531E60086E9C1 /* Day13.swift in Sources */,
 				AB5FEDA226610DF000BC73CC /* main.swift in Sources */,
 				AB48FAB52663D01400E95616 /* Day10.swift in Sources */,
 				ABA386682664099D0069320B /* Day11.swift in Sources */,
