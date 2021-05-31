@@ -1,3 +1,5 @@
+import kotlin.math.abs
+
 fun main(args: Array<String>) {
-    Day7.part1()
+    Day12.part2()
 }
