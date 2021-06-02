@@ -92,32 +92,34 @@ class Day17 {
 }
 
 extension Point4D {
-    func countActiveNeighbours(in map : [Point4D : Bool]) -> Int {
-        neighbours.reduce(0) { acc, next in
-            acc + (map[next] == true).toInt()
-        }
-    }
-    
     func getNextStatus(in map : [Point4D : Bool]) -> Bool {
         let currentState = map[self] == true
-        let amountOfNeighboursActive = self.countActiveNeighbours(in: map)
+        var amountOfActiveNeighbours = 0
         
-        return (currentState && (2...3).contains(amountOfNeighboursActive)) || (!currentState && amountOfNeighboursActive == 3)
+        for neighbour in neighbours {
+            amountOfActiveNeighbours += (map[neighbour] == true).toInt()
+            if amountOfActiveNeighbours > 3 {
+                return false
+            }
+        }
+        
+        return (currentState && (2...3).contains(amountOfActiveNeighbours)) || (!currentState && amountOfActiveNeighbours == 3)
     }
 }
 
 extension Point3D {
-    func countActiveNeighbours(in map : [Point3D : Bool]) -> Int {
-        neighbours.reduce(0) { acc, next in
-            acc + (map[next] == true).toInt()
-        }
-    }
-    
     func getNextStatus(in map : [Point3D : Bool]) -> Bool {
         let currentState = map[self] == true
-        let amountOfNeighboursActive = self.countActiveNeighbours(in: map)
+        var amountOfActiveNeighbours = 0
         
-        return (currentState && (2...3).contains(amountOfNeighboursActive)) || (!currentState && amountOfNeighboursActive == 3)
+        for neighbour in neighbours {
+            amountOfActiveNeighbours += (map[neighbour] == true).toInt()
+            if amountOfActiveNeighbours > 3 {
+                return false
+            }
+        }
+        
+        return (currentState && (2...3).contains(amountOfActiveNeighbours)) || (!currentState && amountOfActiveNeighbours == 3)
     }
 }
 
