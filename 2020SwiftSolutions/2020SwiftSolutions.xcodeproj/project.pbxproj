@@ -12,6 +12,8 @@
 		AB5FEDA226610DF000BC73CC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5FEDA126610DF000BC73CC /* main.swift */; };
 		AB65402C266531E60086E9C1 /* Day13.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB65402B266531E60086E9C1 /* Day13.swift */; };
 		AB718ABC2666ABD000FA66EB /* Day17.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB718ABB2666ABD000FA66EB /* Day17.swift */; };
+		AB8804B0266821C800BC2E6E /* Day19.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8804AF266821C800BC2E6E /* Day19.swift */; };
+		AB8804B3266824E900BC2E6E /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = AB8804B2266824E900BC2E6E /* DequeModule */; };
 		ABA386682664099D0069320B /* Day11.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA386672664099D0069320B /* Day11.swift */; };
 		ABEEFE472666752D002F5867 /* Day16.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEEFE462666752D002F5867 /* Day16.swift */; };
 /* End PBXBuildFile section */
@@ -34,6 +36,7 @@
 		AB5FEDA126610DF000BC73CC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		AB65402B266531E60086E9C1 /* Day13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day13.swift; sourceTree = "<group>"; };
 		AB718ABB2666ABD000FA66EB /* Day17.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day17.swift; sourceTree = "<group>"; };
+		AB8804AF266821C800BC2E6E /* Day19.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day19.swift; sourceTree = "<group>"; };
 		ABA386672664099D0069320B /* Day11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day11.swift; sourceTree = "<group>"; };
 		ABEEFE462666752D002F5867 /* Day16.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day16.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -44,6 +47,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB48FAB82663D0DC00E95616 /* PuzzleBox in Frameworks */,
+				AB8804B3266824E900BC2E6E /* DequeModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +79,7 @@
 				AB65402B266531E60086E9C1 /* Day13.swift */,
 				ABEEFE462666752D002F5867 /* Day16.swift */,
 				AB718ABB2666ABD000FA66EB /* Day17.swift */,
+				AB8804AF266821C800BC2E6E /* Day19.swift */,
 			);
 			path = 2020SwiftSolutions;
 			sourceTree = "<group>";
@@ -97,6 +102,7 @@
 			name = 2020SwiftSolutions;
 			packageProductDependencies = (
 				AB48FAB72663D0DC00E95616 /* PuzzleBox */,
+				AB8804B2266824E900BC2E6E /* DequeModule */,
 			);
 			productName = 2020SwiftSolutions;
 			productReference = AB5FED9E26610DF000BC73CC /* 2020SwiftSolutions */;
@@ -127,6 +133,7 @@
 			mainGroup = AB5FED9526610DF000BC73CC;
 			packageReferences = (
 				AB48FAB62663D0DC00E95616 /* XCRemoteSwiftPackageReference "puzzle-box-SP" */,
+				AB8804B1266824E900BC2E6E /* XCRemoteSwiftPackageReference "swift-collections" */,
 			);
 			productRefGroup = AB5FED9F26610DF000BC73CC /* Products */;
 			projectDirPath = "";
@@ -144,6 +151,7 @@
 			files = (
 				AB65402C266531E60086E9C1 /* Day13.swift in Sources */,
 				ABEEFE472666752D002F5867 /* Day16.swift in Sources */,
+				AB8804B0266821C800BC2E6E /* Day19.swift in Sources */,
 				AB5FEDA226610DF000BC73CC /* main.swift in Sources */,
 				AB48FAB52663D01400E95616 /* Day10.swift in Sources */,
 				AB718ABC2666ABD000FA66EB /* Day17.swift in Sources */,
@@ -323,6 +331,14 @@
 				kind = branch;
 			};
 		};
+		AB8804B1266824E900BC2E6E /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -330,6 +346,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AB48FAB62663D0DC00E95616 /* XCRemoteSwiftPackageReference "puzzle-box-SP" */;
 			productName = PuzzleBox;
+		};
+		AB8804B2266824E900BC2E6E /* DequeModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB8804B1266824E900BC2E6E /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = DequeModule;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
