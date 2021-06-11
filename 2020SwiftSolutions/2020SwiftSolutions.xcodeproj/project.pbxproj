@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB15B9EB266E158600757098 /* Day20.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB15B9EA266E158600757098 /* Day20.swift */; };
 		AB48FAB52663D01400E95616 /* Day10.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB48FAB42663D01400E95616 /* Day10.swift */; };
 		AB48FAB82663D0DC00E95616 /* PuzzleBox in Frameworks */ = {isa = PBXBuildFile; productRef = AB48FAB72663D0DC00E95616 /* PuzzleBox */; };
 		AB5FEDA226610DF000BC73CC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5FEDA126610DF000BC73CC /* main.swift */; };
@@ -31,6 +32,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AB15B9EA266E158600757098 /* Day20.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day20.swift; sourceTree = "<group>"; };
+		AB20FEE326737A1700B35434 /* Day20CompletedPuzzle.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day20CompletedPuzzle.txt; sourceTree = "<group>"; };
+		AB20FEE426738FC600B35434 /* test */ = {isa = PBXFileReference; lastKnownFileType = text; path = test; sourceTree = "<group>"; };
 		AB48FAB42663D01400E95616 /* Day10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day10.swift; sourceTree = "<group>"; };
 		AB5FED9E26610DF000BC73CC /* 2020SwiftSolutions */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 2020SwiftSolutions; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB5FEDA126610DF000BC73CC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -54,6 +58,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB20FEE2267379F800B35434 /* Day20 */ = {
+			isa = PBXGroup;
+			children = (
+				AB15B9EA266E158600757098 /* Day20.swift */,
+				AB20FEE326737A1700B35434 /* Day20CompletedPuzzle.txt */,
+				AB20FEE426738FC600B35434 /* test */,
+			);
+			path = Day20;
+			sourceTree = "<group>";
+		};
 		AB5FED9526610DF000BC73CC = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +94,7 @@
 				ABEEFE462666752D002F5867 /* Day16.swift */,
 				AB718ABB2666ABD000FA66EB /* Day17.swift */,
 				AB8804AF266821C800BC2E6E /* Day19.swift */,
+				AB20FEE2267379F800B35434 /* Day20 */,
 			);
 			path = 2020SwiftSolutions;
 			sourceTree = "<group>";
@@ -155,6 +170,7 @@
 				AB5FEDA226610DF000BC73CC /* main.swift in Sources */,
 				AB48FAB52663D01400E95616 /* Day10.swift in Sources */,
 				AB718ABC2666ABD000FA66EB /* Day17.swift in Sources */,
+				AB15B9EB266E158600757098 /* Day20.swift in Sources */,
 				ABA386682664099D0069320B /* Day11.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,4 +8,5 @@
 import Foundation
 import PuzzleBox
 
-Day19().part2()
+Day20().part2()
+
